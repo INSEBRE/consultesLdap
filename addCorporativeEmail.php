@@ -8,7 +8,7 @@ include "/etc/paraulesdepas.php";
 
 $ldapconfig['host'] = '192.168.50.30';
 #Només cal indicar el port si es diferent del port per defecte
-$ldapconfig['port'] = NULL;
+$ldapconfig['port'] = 389;
 $ldapconfig['basedn'] = 'ou=Alumnes,ou=All,dc=iesebre,dc=com';
 
 $ds=ldap_connect($ldapconfig['host'], $ldapconfig['port']);
